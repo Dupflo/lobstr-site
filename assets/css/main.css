@@ -1,0 +1,40 @@
+/** START VARIABLES **/
+:root {
+  --main-title-color: red;
+  --main-primary-color: #0030cc;
+}
+/** END VARIABLES **/
+
+/** START RESET DES PROPRIÉTÉS NATIVES DES NAVIGATEURS **/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/** END RESET DES PROPRIÉTÉS NATIVES DES NAVIGATEURS **/
+
+main {
+  padding: 10px;
+}
+
+.title {
+  font-size: 1.5em;
+  color: var(--main-title-color);
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--main-primary-color);
+  color: #fff;
+}
+
+/** UTILITAIRES **/
+
+.mt-1 {
+  margin-top: 10px;
+}
