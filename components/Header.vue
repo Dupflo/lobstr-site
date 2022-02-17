@@ -1,16 +1,14 @@
 <template>
   <header>
-    <div class="topbar">
-      <nav class="topbar-nav">
-        <Logo />
-        <div class="section">
-          <a href="#"> Store </a>
-          <a href="#"> Pricing </a>
-          <a href="#"> Blog </a>
-        </div>
-        <BaseButton>Sign in</BaseButton>
-      </nav>
-    </div>
+    <nav class="topbar">
+      <Logo />
+      <div class="section">
+        <a href="#"> Store </a>
+        <a href="#"> Pricing </a>
+        <a href="#"> Blog </a>
+      </div>
+      <BaseButton>Sign in</BaseButton>
+    </nav>
   </header>
 </template>
 

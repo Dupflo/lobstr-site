@@ -17,68 +17,119 @@
 /** END RESET DES PROPRIÉTÉS NATIVES DES NAVIGATEURS **/
 
 header {
-  position: fixed;
+  position: sticky;
   z-index: 1;
   width: 100%;
-  height: 60px;
+  height: 80px;
   top: 0;
   left: 0;
   background: #fff;
   color: #fff;
-  padding: 0 2rem;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
 }
 .logo {
   color: var(--main-title-color);
 }
-.topbar {
-  display: flex;
-  align-items: center;
-  min-height: 56px;
-  height: 86px;
-}
 
-.topbar-nav {
+.topbar {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  font-size: 14px;
 }
-.topbar-nav a {
+.topbar a {
   color: #0a2540;
   padding: 10px 20px;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
 }
+footer {
+  background-color: rgb(240, 240, 240);
+  padding: 50px 0px;
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .container {
-  max-width: 1240px;
+  padding: 100px 0;
   width: 100%;
-  margin: auto;
+  background-color: rgb(243, 245, 245);
+  display: flex;
+  justify-content: space-around;
+}
+footer .logo {
+  padding: 0 16px;
+  font-size: 20px;
+}
+.container .column h3 {
+  padding: 10px 0;
+  font-size: 15px;
+}
+.container .column a {
+  display: block;
+  padding: 5px 0;
+  font-size: 15px;
+  color: rgb(119, 118, 118);
+}
+.container img {
+  width: 45px;
+}
+.social {
+  padding: 5px 10px;
+  width: 35px;
+  cursor: pointer;
+  display: flex;
+}
+.social::before {
+  border-style: groove;
+  border-color: black;
+  background: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-copy {
+  padding: 16px;
+  color: rgba(10, 37, 64, 0.4);
+  font-size: 13px;
 }
 
 .title {
   font-size: 1.5em;
   color: var(--main-title-color);
 }
-
 .btn {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  width: 135px;
+  height: 45px;
+  font-weight: bold;
 }
 
 .btn-primary {
-  padding: 5px 15px;
-  font-size: 20px;
+  padding: 5px 30px;
+  font-size: 16px;
   background-color: inherit;
-  border: 1px solid var(--main-title-color);
+  border: 2px solid var(--main-title-color);
   color: var(--main-title-color);
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
   transition: color 0.5s, background-color 0.5s;
 }
+
 /** UTILITAIRES **/
 
 .mt-1 {
